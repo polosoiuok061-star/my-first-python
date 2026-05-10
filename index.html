@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Super Website</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- เพิ่ม Font ภาษาไทยจาก Google Fonts -->
+    <link href="https://googleapis.com" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">MyBrand</div>
+            <button id="theme-toggle">🌙 โหมดมืด</button>
+        </nav>
+        <div class="hero">
+            <h1>ยินดีต้อนรับสู่โลกของฉัน</h1>
+            <p>นักสร้างสรรค์เว็บไซต์ที่เน้นความเรียบง่ายแต่ทรงพลัง</p>
+        </div>
+    </header>
+
+    <main>
+        <!-- Section: เกี่ยวกับฉัน -->
+        <section id="intro">
+            <h2>เกี่ยวกับฉัน</h2>
+            <p>สวัสดีครับ! ผมเป็นนักพัฒนาเว็บที่ชื่นชอบการออกแบบที่ทันสมัยและใช้งานง่าย ประสบการณ์ของผมเน้นไปที่การสร้าง User Experience ที่ดีที่สุด</p>
+        </section>
+
+        <!-- Section: ผลงานของฉัน (Gallery) -->
+        <section id="gallery">
+            <h2>ผลงานของฉัน</h2>
+            <div class="gallery-grid">
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1671088672987-65a7848e1c76?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Work 1">
+                    <div class="card-info">
+                        <h3>หมูทอด</h3>
+                        <p>อาหารจานเดียว</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1644037423711-a7a9586d87b8?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Work 2">
+                    <div class="card-info">
+                        <h3>ข้าวผัด</h3>
+                        <p>อาหารจานเดียว</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1704969722370-6cf3b314619b?q=80&w=737&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Work 3">
+                    <div class="card-info">
+                        <h3>แกงเขียวหวาน</h3>
+                        <p>อาหารจานเดียว</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section: ติดต่อฉัน -->
+        <section id="contact">
+            <h2>ติดต่อฉัน</h2>
+            <!-- บรรทัดที่ 61: เพิ่ม action (ลิงก์จาก Formspree) และ method="POST" -->
+<form action="https://formspree.io/f/xeenppkq" method="POST" id="contact-form">
+    <input type="text" name="name" placeholder="ชื่อของคุณ" required>  <!-- ต้องมี name="name" -->
+    <input type="email" name="email" placeholder="อีเมลของคุณ" required> <!-- ต้องมี name="email" -->
+    <textarea name="message" placeholder="ข้อความที่ต้องการส่ง..." rows="5" required></textarea> <!-- ต้องมี name="message" -->
+    <button type="submit" class="btn-send">ส่งข้อความ</button>
+</form>
+
+
+        </section>
+    </main>
+
+    <footer>
+        <div class="social-links">
+            <a href="https://www.facebook.com/thrrm.raks.thrrm.man.xk?locale=th_TH" target="_blank">Facebook</a>
+            <a href="#" target="_blank">Line</a>
+            <a href="#" target="_blank">Instagram</a>
+        </div>
+        <p>&copy; 2024 ชื่อ-นามสกุล ของคุณ. All rights reserved.</p>
+    </footer>
+
+    <!-- ปุ่ม Back to Top -->
+    <button id="backToTop" title="Go to top">↑</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
